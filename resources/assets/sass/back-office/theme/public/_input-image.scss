@@ -1,0 +1,69 @@
+$input_image_tools_font_size: $ui_font_size_lg;
+$input_image_tools_font_color: $ui_gray_3;
+
+.input-image-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .input-image{
+        flex: 1;
+        min-width: 120px;
+        max-width: calc((100% / 8) - (#{$ui_gutter_sm * 2}));
+    }
+}
+
+.input-image{
+    display: flex;
+    flex-direction: column;
+    margin-left: $ui_gutter_sm;
+    margin-right: $ui_gutter_sm;
+    margin-bottom: $ui_gutter_sm;
+    @extend %flex_text_middle;
+    input{
+        display: none;
+    }
+    label{
+        margin-bottom: 0px;
+    }
+
+    .image{
+        flex: 1;
+        padding: $ui_gutter_xs;
+        background-color: $white;
+        max-height: 100px;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: auto;
+            margin: auto;
+        }
+    }
+    .tools{
+        // flex: 1;
+        padding: $ui_gutter_xs;
+        @extend %flex_text_middle;
+    }
+    .btn-tools{
+        color: $input_image_tools_font_color;
+        font-size: $input_image_tools_font_size;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        &:focus, &:active{
+            outline: none;
+            border: none;
+        }
+    }
+    &.add-image{
+        .add-input{
+            background-color: $ui_gray_4;
+            color: $input_image_tools_font_color;
+            flex: 1;
+            @extend %flex_text_middle;
+            .add-label{
+                font-size: $input_image_tools_font_size;
+                cursor: pointer;
+            }
+        }
+    }
+}

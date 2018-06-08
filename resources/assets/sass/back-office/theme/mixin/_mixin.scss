@@ -1,0 +1,22 @@
+@mixin circle($size){
+	display: inline-block;
+	width: $size;
+	height: $size;
+	border-radius: 50%;
+}
+
+@mixin button_round($size){
+    height: $size;
+    border: 0px;
+    border-radius: #{$size / 2};
+    padding-left: #{$size * 0.5};
+    padding-right: #{$size * 0.5};
+    line-height: 1;
+}
+
+%flex_text_middle{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}

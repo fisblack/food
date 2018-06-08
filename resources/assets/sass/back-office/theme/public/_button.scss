@@ -1,0 +1,76 @@
+
+.btn{
+	box-shadow: $ui_btn_shadow;
+	i, .fa, .fas, .far{
+		font-size: 140%;
+		line-height: $ui_font_size;
+		vertical-align: text-bottom;
+	}
+	&:focus, &:active{
+		box-shadow: none !important;
+	}
+	&.with-text-shadow{
+		text-shadow: $ui_btn_shadow;
+	}
+}
+
+.btn-sm{
+	i, .fa, .fas, .far{
+		font-size: 130%;
+	}
+}
+
+.btn-flat{
+	box-shadow: none;
+	background-color: $white;
+	&:hover{
+		background-color: darken($white, 6%);
+	}
+}
+
+.btn-success{
+	color: $white;
+}
+
+.btn-default{
+	background-color: $ui_gray_4;
+	color: $white;
+	i, .fa, .fas, .far{
+	}
+}
+
+.btn-warning{
+	color: $white;
+}
+
+.btn-brown{
+	background-color: $ui_brown;
+	color: $white;
+	&:hover, &:active{
+		background-color: darken($ui_brown, 6%);
+	}
+}
+
+.btn-link{
+	box-shadow: none;
+}
+
+.btn-round{
+	@include button_round(34px);
+	&.btn-sm{
+		@include button_round(28px);
+		font-size: $font-size-sm;
+	}
+	&.btn-xs{
+		@include button_round(22px);
+		font-size: $font-size-sm;
+	}
+	&.btn-tools{
+		@include button_round(38px);
+		padding: $ui_gutter_sm;
+		min-width: 180px;
+		@media(max-width: $screen_sm_max){
+			min-width: 140px;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+.search-item{
+    padding: $ui_gutter_sm;
+    background-color: $white;
+    border: $border;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    .search-item-title, .search-item-subtitle{
+        margin-bottom: 0px;
+    }
+    .search-item-image{
+        width: 32px;
+        margin-right: $ui_gutter_sm;
+        @extend %flex_text_middle;
+        img{
+            width: 100%;
+            heigth: auto;
+        }
+    }
+    .search-item-body{
+        flex: 1;
+    }
+    &:hover{
+        background-color: $ui_blue;
+        color: $white;
+    }
+    + .search-item{
+        margin-top: -1px;
+    }
+}
+
+.twitter-typeahead{
+    width: 100%;
+}
+
+.tt-menu{
+    position: absolute;
+    top: calc(100% + 5px) !important;
+    left: 0px;
+    right: 0px;
+    z-index: $ui_zindex !important;
+}
+
+.product-search-item{
+    padding: $ui_gutter_sm;
+    background-color: $white;
+    border: $border;
+    cursor: pointer;
+}
+
+.tt-open{
+    background-color: $white;
+}

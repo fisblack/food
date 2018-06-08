@@ -1,0 +1,140 @@
+.form-control{
+	color: $ui_input_color;
+	&::placeholder{
+		color: lighten($ui_input_color, 40%);;
+	}
+
+	&.round{
+		border-radius: 2rem;
+	}
+	&.btn-form-control{
+		display: inline-block;
+		width: auto;
+		cursor: pointer;
+	}
+}
+
+.form-control-xs{
+	padding: .1rem .4rem;
+	font-size: $font-size-sm;
+}
+
+select{
+	cursor: pointer;
+	-webkit-appearance:none;
+	&.form-control-xs{
+		height: auto !important;
+	}
+}
+
+$control-label-padding: 2rem;
+.form-control-label{
+	text-align: right;
+	padding-right: $control-label-padding;
+	position: relative;
+	&:after{
+		content: ':';
+		position: absolute;
+		right: #{$control-label-padding / 2};
+		top: 0.25rem;
+	}
+}
+
+
+$select_caret_size: 24px;
+.select-group{
+	position: relative;
+	&:after{
+		font-family: 'Font Awesome 5 Free';
+    	font-weight: 900;
+    	content: "\F078";
+    	display: inline-block;
+    	position: absolute;
+    	top: 0;
+    	right: 5px;
+    	bottom: 0;
+    	width: $select_caret_size;
+    	line-height: 34px;
+    	text-align: center;
+	}
+	select, .form-control{
+		padding-right: $select_caret_size + 10px;
+	}
+}
+
+.input-group{
+	color: $ui_input_color;
+	&.round{
+		.form-control, .input-group-text{
+			border-radius: 2rem;
+		}
+		.form-control{
+			border-top-right-radius: 0px;
+			border-bottom-right-radius: 0px;
+			border-right: 0px;
+		}
+		.input-group-text{
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+			border-left: 0px;
+		}
+	}
+}
+
+.checkbox{
+	display: inline-block;
+	label{
+		padding: 0.25rem 0.4rem;
+		background-color: $white;
+		border-radius: $ui_border_radius_sm;
+		color: $ui_light_blue;
+		cursor: pointer;
+		line-height: 1;
+		margin-bottom: 0px;
+		border: 1px solid #eee;
+		font-size: $font-size-lg;
+		&:before{
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+			content: '\F065';
+		}
+	}
+	input{
+		display: none;
+		&:checked{
+			+ label{
+				&:before{
+					content: '\F14A';
+				}
+			}
+		}
+	}
+}
+
+.form-control-sm,
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-prepend > .input-group-text,
+.input-group-sm > .input-group-append > .input-group-text,
+.input-group-sm > .input-group-prepend > .btn,
+.input-group-sm > .input-group-append > .btn {
+	border-radius: $ui_border_radius_xl;
+}
+
+$search_icon_size: 20px;
+.form-search{
+	position: relative;
+	&:before{
+		font-family: 'Font Awesome 5 Free';
+    	font-weight: 900;
+		content: "\F002";
+		position: absolute;
+		top: 5px;
+		left: 10px;
+		color: #adacac;
+	}
+	.form-control{
+		padding-left: 38px;
+		box-shadow: $ui_btn_shadow;
+	}
+}
+

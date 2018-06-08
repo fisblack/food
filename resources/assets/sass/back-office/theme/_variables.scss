@@ -1,0 +1,108 @@
+// COLOR
+$white: #ffffff;
+$black: #000000;
+
+$ui_gray_1: #636363;
+$ui_gray_2: #898989;
+$ui_gray_3: #959595;
+$ui_gray_4: #d7d7d7;
+// $ui_gray_5: #dbdbda;
+
+
+$ui_panel_color_1: #ececec; 
+$ui_panel_color_2: #dddcdc;
+$ui_panel_color_3: #f6f5f5;
+
+$ui_blue: #2e6595;
+$ui_blue_light: #468dc8;
+$ui_light_blue: #00aeef;
+
+$ui_orenge: #f8931d;
+$ui_yello_1: #f8b148;
+$ui_yello_2: #ffd600;
+
+$ui_brown: #754c24;
+
+$ui_green: #8dc63f;
+$ui_red: #ff0000;
+
+
+// Custom Bootstrap & ui variables
+
+$ui_body_bg: #ebebeb;
+$ui_font_color: $black;
+$ui_font_color_light: $ui_gray_1;
+$ui_border_color: $ui_gray_4;
+
+$edit_bg_color_1: #f36525;
+$edit_bg_color_2: #f8931d;
+
+$del_bg_color_1: #c0060b;
+$del_bg_color_2: #fc0001;
+
+$code_panel_bg: #282c34;
+$code_html_color: #bbbbbb;
+$code_html_tag_color: #e06252;
+$code_html_attr_color: #d18c4b;
+$code_html_attr_value_color: #98c379;
+$code_html_class_hilight: #61afef;
+
+$ui_primary: $ui_blue;
+$ui_info: $ui_light_blue;
+$ui_success: $ui_green;
+
+$ui_link_color: $ui_light_blue;
+
+$all_font_default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+$default_theme_font: $all_font_default;
+
+$ui_font_size: 1rem;
+$ui_font_size_lg: $ui_font_size * 1.25;
+$ui_font_size_sm: $ui_font_size * .875;
+$ui_font_size_xs: $ui_font_size * .75;
+
+$ui_font_weight_light: 200;
+$ui_font_weight_normal: 300;
+$ui_font_weight_bold: 600;
+
+$ui_title_font_weight: $ui_font_weight_bold;
+
+$ui_gutter: 1rem;
+$ui_gutter_sm: $ui_gutter * 0.6;
+$ui_gutter_xs: $ui_gutter * 0.4;
+$ui_gutter_lg: $ui_gutter * 1.2;
+$ui_gutter_xl: $ui_gutter * 2;
+
+$ui_border_radius: .6rem;
+$ui_border_radius_lg: $ui_border_radius + .1rem;
+$ui_border_radius_xl: $ui_border_radius + .3rem;
+$ui_border_radius_sm: $ui_border_radius - .1rem;
+
+$ui_input_color: #464646;
+
+$ui_input_btn_padding_y: .25rem;
+$ui_input_btn_padding_x: .75rem;
+
+$ui_btn_shadow: 3px 2.5px 2px rgba(0,0,0,0.3);
+
+$ui_zindex: 1024;
+
+$border: 1px solid $ui_border_color;
+
+$nav_tabs_border_radius: $ui_border_radius_sm;
+$ui_nav_tabs_link_active_bg: $white;
+
+
+$screen_sm: 540px;
+$screen_md: 720px;
+$screen_lg: 960px;
+$screen_xl: 1140px;
+
+$screen_xs_max: $screen_sm - 1;
+$screen_sm_max: $screen_md - 1;
+$screen_md_max: $screen_lg - 1;
+$screen_lg_max: $screen_xl - 1;
+
+
+@import 'bootstrap-scss/variables';

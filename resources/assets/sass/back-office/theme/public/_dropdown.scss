@@ -1,0 +1,45 @@
+$select_caret_size: 24px;
+
+.dropdown-toggle{
+    position: relative;
+    padding-right: $select_caret_size + 10px;
+    &:after{
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: "\F078";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 5px;
+        bottom: 0;
+        width: $select_caret_size;
+        line-height: 34px;
+        text-align: center;
+        border: 0px;
+    }
+}
+
+.dropdown{
+    &.dropdown-gray{
+        .dropdown-header{
+            font-size: $ui_font_size;
+            font-weight: $ui_font_weight_normal;
+            color: $ui_font_color;
+            padding: 0 1.5rem;
+        }
+        .dropdown-menu{
+            background-color: $ui_gray_4;
+            .dropdown-item{
+                color: $ui_font_color_light;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.5);
+                    color: $ui_success;
+                }
+            }
+        }
+        .dropdown-divider{
+            border-top: 1px solid $ui_font_color;
+        }
+    }
+}

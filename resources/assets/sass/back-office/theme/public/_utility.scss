@@ -1,0 +1,120 @@
+@for $i from 1 through 60{
+	.font-size-#{$i} {
+		font-size: $i * 1px !important;
+	}
+}
+
+.code-panel{
+	background-color: $code_panel_bg;
+	border-radius: $border-radius;
+	padding: $ui_gutter;
+}
+
+.html{
+	color: $code_html_color;
+	.tag{
+		color: $code_html_tag_color;
+	}
+	.attr{
+		color: $code_html_attr_color;
+	}
+	.attr-value{
+		color: $code_html_attr_value_color;
+	}
+	.class-hilight{
+		color: $code_html_class_hilight;
+	}
+}
+
+code{
+	font-size: $font-size-base;
+}
+
+span{
+    white-space: nowrap;
+    vertical-align: middle;
+}
+label{
+	&.has-action{
+		cursor: pointer;
+	}
+}
+
+.block{
+	display: block !important;
+}
+
+.text-warning-2{
+	color: $ui_yello_2;
+}
+.text-black{
+	color: $black;
+}
+
+.text-bold{
+	font-weight: bold;
+}
+
+.list-inline-item{
+	&.circle{
+		@include circle(32px);
+		overflow: hidden;
+		background-size: auto 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}	
+}
+
+$border_dotted: 1.5px dotted $ui_gray_4 !important;
+
+.border-dotted{
+	&.border{
+		border: $border_dotted;
+	}
+	&.border-top{
+		border-top: $border_dotted;
+	}
+	&.border-left{
+		border-left: $border_dotted;
+	}
+	&.border-bottom{
+		border-bottom: $border_dotted;
+	}
+	&.border-left{
+		border-left: $border_dotted;
+	}
+}
+
+hr{
+	&.dotted{
+		border-top: $border_dotted;
+	}
+}
+
+.user-icon{
+	color: #7d7d7d;
+	font-size: 2.2rem;
+}
+
+.bg-grey{
+	background-color: $ui_panel_color_1;
+}
+.bg-light-grey{
+	background-color: $ui_panel_color_3;
+}
+
+.form-text{
+	font-size: $ui_font_size_sm;
+	margin-bottom: .25px;
+	padding-left: $ui_gutter_sm;
+}
+
+.font-size-sm{
+	font-size: $ui_font_size_sm;
+}
+.font-size-xs{
+	font-size: $ui_font_size_xs;
+}
+.font-size-lg{
+	font-size: $ui_font_size_lg;
+}
